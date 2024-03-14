@@ -1,7 +1,13 @@
 my_dict: dict = {
     'one': (1, 2, 3, 4, 5), 
     'two': [7, 8, 9, 10, 11], 
-    'three': {'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5}, 
+    'three': {
+        'one': 1, 
+        'two': 2, 
+        'three': 3, 
+        'four': 4, 
+        'five': 5
+        }, 
     'four': {11, 12, 13, 14, 15}
     }
 
