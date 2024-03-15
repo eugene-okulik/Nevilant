@@ -13,7 +13,7 @@ my_dict: dict = {
 
 my_dict['two'].append('a')
 my_dict['two'].pop(1)
-my_dict['three']['i am a tuple'] = 'hello'
+my_dict['three'][('i am a tuple',)] = 'hello'
 my_dict['three'].pop('four')
 my_dict['four'].pop()
 my_dict['four'].add('sixteen')
