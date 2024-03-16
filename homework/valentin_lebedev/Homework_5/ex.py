@@ -15,7 +15,7 @@ def slice_text(text):
     return int(text[text.index(':') + 2:]) + 10
 
 
-print(slice_text(text_1) + 10, slice_text(text_2), slice_text(text_3), sep='\n')
+print(slice_text(text_1) , slice_text(text_2), slice_text(text_3), sep='\n')
 
 # Задание 3
 
