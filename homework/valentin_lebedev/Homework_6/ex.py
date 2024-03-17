@@ -6,13 +6,13 @@ list_text = text.split()
 edit_text = []
 
 for word in list_text:
-    if word[-1] in ["," "."]:
-        edit_word = f"{word[:-2]}ing{word[-1]}"
+    if word[-1] in [",", "."]:
+        edit_word = word[:-1] + "ing" + word[-1]
     else:
         edit_word = word + "ing"
     edit_text.append(edit_word)
 
-print(' '.join(list_text))
+print(' '.join(edit_text))
 
 # Задание 2
 
