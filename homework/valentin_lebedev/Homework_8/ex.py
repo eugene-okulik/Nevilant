@@ -1,14 +1,15 @@
-# Задание 1
 import random
 import sys
 
-# salary = int(input("Введите сумму: "))
-# bonus = random.choice([True, False])
-#
-# if bonus:
-#     print(f'{salary}, {bonus} - ${salary + random.randint(1, 10000)}')
-# else:
-#     print(f'{salary}, {bonus} - ${salary}')
+# Задание 1
+
+salary = int(input("Введите сумму: "))
+bonus = random.choice([True, False])
+
+if bonus:
+    print(f'{salary}, {bonus} - ${salary + random.randint(1, 10000)}')
+else:
+    print(f'{salary}, {bonus} - ${salary}')
 
 # Задание 2
 
