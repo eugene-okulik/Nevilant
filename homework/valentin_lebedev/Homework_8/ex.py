@@ -35,4 +35,3 @@ print(fib_index(4))
 print(fib_index(199))
 print(fib_index(999))
 print(fib_index(99999))
-
