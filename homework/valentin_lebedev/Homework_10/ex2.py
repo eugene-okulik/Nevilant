@@ -24,7 +24,7 @@ def repeat_me(count):
 
 @repeat_me(count=3)
 def print_something2():
-    print(f'Start decorator with arguments function')
+    print('Start decorator with arguments function')
 
 
 print_something2()
