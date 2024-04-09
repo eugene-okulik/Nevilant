@@ -13,8 +13,7 @@ class SchoolBook(Book):
 first_sb = SchoolBook('Биология', 'Соловьева', 320, 'Зоология', 8)
 second_sb = SchoolBook('Геометрия', 'Иванова', 180, 'Математика', 9)
 third_sb = SchoolBook(
-    'Алгебра', 'Баранова', 250, 'Математика', 10, reserved=True
-)
+    'Алгебра', 'Баранова', 250, 'Математика', 10, reserved=True)
 
 list_sb = [first_sb, second_sb, third_sb]
 
