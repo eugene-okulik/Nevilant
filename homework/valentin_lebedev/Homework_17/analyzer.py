@@ -35,7 +35,8 @@ for filename in os.listdir(args.dir):
                 our_index = string_list.index(search_text)
                 print(f"---The string: '{search_text}' found in file: '{filename}' on line: {index + 1}:")
                 print(
-                    f"---{' '.join(string_list[max(0, our_index - before):our_index])} {' '.join(string_list[our_index:our_index + after])}",
+                    f"---{' '.join(string_list[max(0, our_index - before):our_index])} "
+                    f"{' '.join(string_list[our_index:our_index + after])}",
                     end="\n")
                 if args.one:
                     flag = True
