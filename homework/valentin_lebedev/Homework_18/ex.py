@@ -100,4 +100,3 @@ print("Пост создан с id: ", create_post().json()["id"])
 print("Пост:", get_post(create_post().json()["id"]).json(), sep="\n")
 print("Пост изменен методом PUT", put_post().json(), sep="\n")
 print("Пост изменен методом PATCH", patch_post().json(), sep="\n")
-
