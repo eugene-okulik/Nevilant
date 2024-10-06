@@ -96,7 +96,16 @@ def patch_post():
     return response
 
 
+def delete_post():
+    id_post = create_post().json()["id"]
+    response = requests.delete(
+        url=f"http://167.172.172.115:52353/object/{id_post}"
+    )
+    assert len(response.json()) == 0
+
+
 print("Пост создан с id: ", create_post().json()["id"])
 print("Пост:", get_post(create_post().json()["id"]).json(), sep="\n")
 print("Пост изменен методом PUT", put_post().json(), sep="\n")
 print("Пост изменен методом PATCH", patch_post().json(), sep="\n")
+print(f"Пост с id = {create_post().json()["id"]} удален")
