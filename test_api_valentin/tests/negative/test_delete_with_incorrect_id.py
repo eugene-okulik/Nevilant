@@ -13,4 +13,4 @@ NOT_EXIST_ID = [
 @pytest.mark.parametrize("data", NOT_EXIST_ID)
 def test_delete_with_incorrect_id(wrapper_delete_object, data):
     wrapper_delete_object.delete_object(data)
-    wrapper_delete_object.check_status_code_is_not_200()
+    wrapper_delete_object.check_object_not_found()

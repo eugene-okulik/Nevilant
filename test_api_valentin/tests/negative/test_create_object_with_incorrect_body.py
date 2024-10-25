@@ -23,4 +23,4 @@ DATA = [
 @pytest.mark.parametrize('data', DATA)
 def test_create_object_with_incorrect_body(wrapper_create_object, data):
     wrapper_create_object.create_object(payload=data)
-    wrapper_create_object.check_status_code_is_not_200()
+    wrapper_create_object.check_bad_request()

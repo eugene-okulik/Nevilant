@@ -22,3 +22,11 @@ class Endpoints:
     @allure.step("Check the number of properties")
     def check_properties(self, properties):
         assert len(self.response.json()['data']) == len(properties), "Object properties is not equal to properties"
+
+    @allure.step("Check that object not found")
+    def check_object_not_found(self):
+        assert self.response.status_code == 404, "Status code is not 404"
+
+    @allure.step("Check that request is wrong")
+    def check_bad_request(self):
+        assert self.response.status_code == 400, "Status code is not 400"
