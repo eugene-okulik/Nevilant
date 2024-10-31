@@ -14,7 +14,7 @@ class WorkWithObjects(HttpUser):
 
     def on_start(self):
         response = self.client.post(
-            f'/object',
+            '/object',
             headers=self.headers,
             json=self.body
         )
